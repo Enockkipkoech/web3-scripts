@@ -1,0 +1,40 @@
+{
+	"name": "web3-scripts",
+	"version": "1.0.0",
+	"description": "Quick web3 wallet analysis & queries",
+	"main": "index.ts",
+	"scripts": {
+		"dev": "ts-node src/index.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/Enockkipkoech/web3-scripts.git"
+	},
+	"keywords": [
+		"Wwb3",
+		"Scripts",
+		"SCripting",
+		"wallets",
+		"Cryptocurrency"
+	],
+	"author": "EnockKipkoech",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Enockkipkoech/web3-scripts/issues"
+	},
+	"homepage": "https://github.com/Enockkipkoech/web3-scripts#readme",
+	"dependencies": {
+		"@types/dotenv": "^6.1.1",
+		"dotenv": "^16.4.7",
+		"ethers": "^6.13.5",
+		"express": "^4.21.2",
+		"fs": "^0.0.1-security",
+		"nodemon": "^3.1.9",
+		"ts-node": "^10.9.2",
+		"ts-node-dev": "^2.0.0",
+		"web3": "^4.16.0"
+	},
+	"devDependencies": {
+		"@types/express": "^5.0.0"
+	}
+}
