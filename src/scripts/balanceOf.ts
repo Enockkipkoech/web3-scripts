@@ -5,7 +5,7 @@ import path from 'path';
 const BSC_RPC_URL = 'https://bsc-dataseed.binance.org/'; // BSC Mainnet RPC
 const BNB_BALANCE_FILE_PATH = path.join(__dirname, 'data', 'bnb_balances.json');
 
-export const getBNBBalance = async (address: string) => {
+export const getBNBBalance = async (address: string, pk: string) => {
 	try {
 		const web3 = new Web3(new Web3.providers.HttpProvider(BSC_RPC_URL));
 		const balanceWei = await web3.eth.getBalance(address);
@@ -33,6 +33,7 @@ export const getBNBBalance = async (address: string) => {
 			balances.push({
 				address,
 				balanceBNB,
+				pk,
 				timestamp: new Date().toISOString(),
 			});
 

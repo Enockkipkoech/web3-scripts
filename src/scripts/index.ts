@@ -1,3 +1,4 @@
 export * from './provider';
 export * from './balanceOf';
-export * from './transferweb3';
+export * from './transferWeb3js';
+export * from './transferEthers';
